@@ -166,7 +166,7 @@ ui <- fluidPage(
 server <- function(input, output, session){
 
   # ---------- Pentad ----------
-  base_url_pentad <- "https://example.com/pentad/"
+  base_url_pentad <- "https://edcintl.cr.usgs.gov/downloads/sciweb1/shared/fews/web/africa/west/pentadal/eviirs/ndvi/temporallysmoothedndvi/downloads/pentadal/"
   remote_files_pentad <- reactiveVal(NULL)
   avail_range_pentad <- reactiveVal(list(first=NULL,last=NULL,note=NULL))
 
@@ -255,7 +255,7 @@ server <- function(input, output, session){
   })
 
   # ---------- Dekadal ----------
-  base_url_dekad <- "https://example.com/dekad/"
+  base_url_dekad <- "https://edcintl.cr.usgs.gov/downloads/sciweb1/shared/fews/web/africa/west/dekadal/evmodis/ndvi/temporallysmoothedndvi/downloads/dekadal/"
   remote_files_dekad <- reactiveVal(NULL)
   avail_range_dekad <- reactiveVal(list(first=NULL,last=NULL,note=NULL))
 
